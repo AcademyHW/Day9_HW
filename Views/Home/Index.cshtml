@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Day9_HW.Models.Student>
+@{
+    ViewBag.Title = "Все студенты";
+}
+<a asp-action="Create">Добавить студента</a>
+<table class="table">
+    <tr><td>Имя</td><td>ID</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.StudentId</td><td>@item.StudentFullName</td></tr>
+    }
+</table>

@@ -1,0 +1,13 @@
+﻿@model Day9_HW.Models.Student
+@{
+    ViewBag.Title = "Добавление студента";
+}
+<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="StudentFullName" class="control-label">Имя</label>
+        <input type="text" asp-for="StudentFullName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>
