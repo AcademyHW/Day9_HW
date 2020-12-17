@@ -4,7 +4,7 @@
 }
 <a asp-action="Create">Добавить студента</a>
 <table class="table">
-    <tr><td>Имя</td><td>ID</td></tr>
+    <tr><td>ID</td><td>Имя студента</td></tr>
     @foreach (var item in Model)
     {
         <tr><td>@item.StudentId</td><td>@item.StudentFullName</td></tr>
